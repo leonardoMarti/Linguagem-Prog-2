@@ -10,8 +10,8 @@ for n in range(5):
         if lista[n] < menor:
             menor = lista[n]
 
-print(f'A maior quantidade de mortos em um mês foi de {maior} capturados')
-print(f'A menor quantidade de mortos em um mês foi de {menor} capturados')
+print(f'A maior quantidade de capturados em um mês foi de {maior}')
+print(f'A menor quantidade de capturados em um mês foi de {menor}')
 
 total = 0
 for item in lista:
