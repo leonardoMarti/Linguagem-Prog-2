@@ -1,7 +1,7 @@
 lista = []
 maior = menor = 0
 for n in range(5):
-    lista.append(int(input(f"Digite o numero de mortos no {n + 1}º mês: ")))
+    lista.append(int(input(f"Digite o numero de presos no {n + 1}º mês: ")))
     if n == 0:
         maior = menor = lista[n]
     else:
@@ -10,14 +10,14 @@ for n in range(5):
         if lista[n] < menor:
             menor = lista[n]
 
-print(f'A maior quantidade de mortos em um mês foi de {maior} mortos')
-print(f'A menor quantidade de mortos em um mês foi de {menor} mortos')
+print(f'A maior quantidade de mortos em um mês foi de {maior} capturados')
+print(f'A menor quantidade de mortos em um mês foi de {menor} capturados')
 
 total = 0
 for item in lista:
     total += item;
 media = total / len(lista)
-print(f"A media de mortos ficou em {media} mortos")
+print(f"A media de capturados ficou em {media}")
 
 diffList = []
 for n in range(5):
@@ -32,5 +32,5 @@ for key, value in enumerate(diffList):
             menorAprox = value
             indexMenor = key
 
-print(f'O valor mais próximo da média de mortes foi de {lista[indexMenor]} mortos')
+print(f'O valor mais próximo da média de capturados foi de {lista[indexMenor]}')
 
